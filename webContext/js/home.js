@@ -1112,6 +1112,7 @@ function createFileRow(fi, aL, aD, aR, aO) {
 			case "mp3":
 			case "wav":
 			case "ogg":
+			case "flac":
 				fileRow = fileRow
 					+ "<button onclick='playAudio("
 					+ '"'

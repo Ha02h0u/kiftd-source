@@ -32,7 +32,7 @@ public class AudioInfoUtil {
 		int index = 0;
 		for (final Node n : nodes) {
 			final String suffix = n.getFileName().substring(n.getFileName().lastIndexOf(".") + 1);
-			if (suffix.equalsIgnoreCase("mp3") || suffix.equalsIgnoreCase("ogg") || suffix.equalsIgnoreCase("wav")) {
+			if (suffix.equalsIgnoreCase("mp3") || suffix.equalsIgnoreCase("ogg") || suffix.equalsIgnoreCase("wav") || suffix.equalsIgnoreCase("flac")) {
 				final AudioInfo ai = new AudioInfo();
 				ai.setUrl("resourceController/getResource/" + n.getFileId());
 				ai.setLrc(DEFAULT_LRC);
